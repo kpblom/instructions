@@ -21,8 +21,8 @@
 **Install Ubuntu in WSL**
 >choco install wsl-ubuntu-2004 -y
 
-**Install Powershell Core alongside with Powershell (5.1)**
->choco install powershell-core -y
+**Install PowerShell Core alongside with PowerShell (5.1)**
+>choco install PowerShell-core -y
 
 **Install VSCODE**
 >choco install vscode -y
@@ -36,7 +36,7 @@
 **Generate ssh keys if you do not have any - Must use passphrase!**
 >ssh-keygen -t ed25519 -f $env:USERPROFILE\.ssh\id_ed25519 -C $env:USERNAME@$env:USERDNSDOMAIN
 
-**We should avoid using RSA SSH-keys but if you must have one, make it 4096 bits...:**
+**We should avoid using RSA SSH-keys but if you must have one, make it 4096 bits:**
 >ssh-keygen -t rsa -b 4096 -f $env:USERPROFILE\.ssh\id_rsa -C $env:USERNAME@$env:USERDNSDOMAIN
 
 
@@ -45,7 +45,7 @@
 >git config --global alias.hist "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
 
-## Setup SSH-agent keys so you dont have to type password all the time when using VSCODE and powershell:
+## Setup SSH-agent keys so you dont have to type password all the time when using VSCODE and PowerShell:
 >Get-Service ssh-agent | Set-Service -StartupType Automatic<br>
 >start-service ssh-agent<br>
 
