@@ -49,8 +49,7 @@
 >Get-Service ssh-agent | Set-Service -StartupType Automatic<br>
 >start-service ssh-agent<br>
 
-**Add private keys to ssh-agent:**
->ssh-add $env:USERPROFILE/.ssh/id_rsa<br>
+**Add private key to ssh-agent:**
 >ssh-add $env:USERPROFILE/.ssh/id_ed25519
 
 **Make sure Windows native is using OpenSSH from Windows/system32 folder:**
